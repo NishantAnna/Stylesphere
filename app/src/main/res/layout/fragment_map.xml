@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/pnu2"
+    tools:context=".MapFragment">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/image_slider">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mumbai"
+                android:layout_width="331dp"
+                android:layout_height="230dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/mumbai" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mumbai"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="Mumbai"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+            <ImageView
+        android:id="@+id/banglore"
+        android:layout_width="331dp"
+        android:layout_height="330dp"
+        android:layout_below="@id/textView4"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bangalore" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banglore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Bangalore"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/ap"
+        android:layout_width="331dp"
+        android:layout_height="330dp"
+        android:layout_below="@id/textView5"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ap" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Andhra Pradesh"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/delhi"
+        android:layout_width="331dp"
+        android:layout_height="330dp"
+        android:layout_below="@id/textView6"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/delhi" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delhi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Delhi"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/hyd"
+        android:layout_width="331dp"
+        android:layout_height="330dp"
+        android:layout_below="@id/textView7"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/hyderabad" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hyd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Hyderabad"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/kolkata"
+        android:layout_width="331dp"
+        android:layout_height="330dp"
+        android:layout_below="@id/textView8"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/kolkata" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kolkata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Kolkata"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <ListView
+        android:id="@+id/addressListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kolkata"
+        android:visibility="gone" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

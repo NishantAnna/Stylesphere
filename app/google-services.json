@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "932466727347",
+    "project_id": "stylesphere-9f4bd",
+    "storage_bucket": "stylesphere-9f4bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932466727347:android:338878eb5906cd1e20d3c6",
+        "android_client_info": {
+          "package_name": "com.example.stylesphere"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3Je17VXN9uFtUXzohxQOT1BoNoleTTec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

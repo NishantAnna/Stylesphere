@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pnu1">
+
+  <TextView
+      android:id="@+id/bookingDetailsTitleTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="16dp"
+      android:fontFamily="monospace"
+      android:text="Booking Details"
+      android:textColor="@color/black"
+      android:textColorHighlight="@color/black"
+      android:textColorHint="@color/black"
+      android:textSize="24sp"
+      android:textStyle="bold" />
+
+  <TextView
+      android:id="@+id/usernameTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/bookingDetailsTitleTextView"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="171dp"
+      android:layout_marginLeft="171dp"
+      android:layout_marginTop="71dp"
+      android:layout_marginRight="155dp"
+      android:fontFamily="monospace"
+      android:text="Username"
+      android:textColor="@color/black"
+      android:textColorHighlight="@color/black"
+      android:textColorHint="@color/black"
+      android:textSize="18sp"
+      android:textStyle="bold" />
+
+  <TextView
+      android:id="@+id/phoneNumberTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/usernameTextView"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="159dp"
+      android:layout_marginLeft="159dp"
+      android:layout_marginTop="119dp"
+      android:layout_marginRight="124dp"
+      android:fontFamily="monospace"
+      android:text="Phone Number"
+      android:textColor="@color/black"
+      android:textColorHighlight="@color/black"
+      android:textColorHint="@color/black"
+      android:textSize="18sp"
+      android:textStyle="bold" />
+
+  <TextView
+      android:id="@+id/emailTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/phoneNumberTextView"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginStart="178dp"
+      android:layout_marginLeft="178dp"
+      android:layout_marginTop="165dp"
+      android:layout_marginRight="180dp"
+      android:fontFamily="monospace"
+      android:text="Email"
+      android:textColor="@color/black"
+      android:textColorHighlight="@color/black"
+      android:textColorHint="@color/black"
+      android:textSize="18sp"
+      android:textStyle="bold" />
+
+  <TextView
+      android:id="@+id/serviceNameTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/emailTextView"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginStart="155dp"
+      android:layout_marginLeft="155dp"
+      android:layout_marginTop="218dp"
+      android:layout_marginRight="128dp"
+      android:fontFamily="monospace"
+      android:text="Service Name"
+      android:textColor="@color/black"
+      android:textColorHighlight="@color/black"
+      android:textColorHint="@color/black"
+      android:textSize="18sp"
+      android:textStyle="bold" />
+
+  <RadioGroup
+      android:id="@+id/price"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/serviceNameTextView"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="20dp">
+
+    <!-- Your radio button options for service price here -->
+
+
+
+  <RadioButton
+        android:id="@+id/makeoverRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makeover - Rs.2000" />
+
+    <RadioButton
+        android:id="@+id/haircutRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Haircut - Rs.500" />
+
+    <RadioButton
+        android:id="@+id/pedicureRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedicure - Rs.1000" />
+
+    <RadioButton
+        android:id="@+id/manicureRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manicure - Rs.1500" />
+
+    <RadioButton
+        android:id="@+id/bodyMassageRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Body Massage - Rs.5000" />
+
+  </RadioGroup>
+
+  <EditText
+      android:id="@+id/addressEditText"
+      android:layout_width="349dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/price"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginStart="33dp"
+      android:layout_marginLeft="33dp"
+      android:layout_marginTop="455dp"
+      android:layout_marginEnd="16dp"
+      android:layout_marginRight="29dp"
+      android:gravity="center"
+      android:hint="Enter Address"
+      android:inputType="text"
+      android:textColorHighlight="@color/black"
+      android:textColorHint="@color/black"
+      android:textStyle="bold" />
+
+  <RadioGroup
+      android:id="@+id/paymentRadioGroup"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/addressEditText"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginStart="140dp"
+      android:layout_marginLeft="140dp"
+      android:layout_marginTop="521dp"
+      android:layout_marginRight="135dp">
+
+    <RadioButton
+        android:id="@+id/cashOnDeliveryRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay in Cash" />
+
+    <RadioButton
+        android:id="@+id/creditCardRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit Card" />
+
+  </RadioGroup>
+
+  <Button
+      android:id="@+id/confirmBookingButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/paymentRadioGroup"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentRight="true"
+      android:layout_marginStart="128dp"
+      android:layout_marginLeft="128dp"
+      android:layout_marginTop="614dp"
+      android:layout_marginRight="135dp"
+      android:text="Confirm Booking" />
+
+</RelativeLayout>
